@@ -1,5 +1,23 @@
-<ion-view title="Account">
+<ion-view title="Mass Message">
   <ion-content class="has-header padding">
-    <h1>Account</h1>
+    <h1>Spam Everyone</h1>
+    
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">Title</span>
+        <input type="text" ng-model="notification.title">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Message</span>
+        <input type="text" ng-model="notification.message">
+      </label>
+      <label class="item item-input">
+        <button class="button button-block button-positive" ng-click="sendMessage()">
+          Send
+        </button>
+
+      </label>
+    </div>
+    
   </ion-content>
 </ion-view>
